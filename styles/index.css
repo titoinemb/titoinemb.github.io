@@ -1,0 +1,27 @@
+body {
+  background-color: #ffc5d3;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#div1 {
+  width: auto;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@keyframes dance {
+  0%, 100% { transform: rotate(0deg); } 50% { transform: rotate(5deg); }
+}
+
+#anime {
+  transform-origin: top center; animation: dance 1s infinite;
+}
