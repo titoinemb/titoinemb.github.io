@@ -8,6 +8,11 @@ body {
 
 #div1 {
   width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-content: center;
 }
 
 html, body {
