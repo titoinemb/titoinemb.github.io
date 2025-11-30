@@ -2,7 +2,7 @@ import React from 'react';
 
 function Error404() {
   return (
-    <div>c</div>
+    <div>cc</div>
   );
 }
 
