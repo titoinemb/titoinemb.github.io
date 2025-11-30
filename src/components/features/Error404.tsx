@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Home() {
+function Error404() {
   return (
     <div>c</div>
   );
 }
 
-export default Home;
+export default Error404;

@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Header() {
+function Project() {
   return (
     <div>vv</div>
   );
 }
 
-export default Header;
+export default Project;
