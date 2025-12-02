@@ -1,9 +1,0 @@
-import React from 'react';
-
-function Home() {
-  return (
-    <div>c</div>
-  );
-}
-
-export default Home;

@@ -1,23 +1,21 @@
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
-import { Error404, Footer, Header, Home } from "./components";
 import "./styles/index.scss";
+import { Header, Me } from './components';
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
+const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 
 root.render(
   <Router>
-    <Header />
-
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path='*' element={<Error404 />} />
+      <Route path='*' element={
+        <>
+          <Header />
+          <Me />
+        </>
+      } />
     </Routes>
-
-    <Footer />
   </Router>
 );
 

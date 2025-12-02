@@ -1,6 +1,5 @@
 import { lazy } from "react";
 
-export const Home     = lazy(() => import("./features/Home"));
-export const Error404 = lazy(() => import("./features/Error404"));
-export const Header   = lazy(() => import("./layout/Header"));
-export const Footer   = lazy(() => import("./layout/Footer"));
+export const Header   = lazy(() => import("./layout/Header").then(mod => ({ default: mod.Header })));
+export const Footer   = lazy(() => import("./layout/Footer").then(mod => ({ default: mod.Footer })));
+export const Me       = lazy(() => import("./features/Me").then(mod => ({ default: mod.Me })));
