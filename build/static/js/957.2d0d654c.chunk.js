@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunktitoinemb=self.webpackChunktitoinemb||[]).push([[957],{957:(e,t,s)=>{s.d(t,{Footer:()=>n});s(43);var i=s(579);const n=()=>(0,i.jsx)("div",{})}}]);
+//# sourceMappingURL=957.2d0d654c.chunk.js.map
