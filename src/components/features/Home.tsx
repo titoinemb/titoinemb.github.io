@@ -1,7 +1,7 @@
 import React from 'react';
 import "../../styles/features/me.scss"
 
-export const Me: React.FC = () => {
+export const Home: React.FC = () => {
   return (
     <div>
 

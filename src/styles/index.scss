@@ -1,4 +1,12 @@
-// tailwind import
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@use "./var.scss";
+
+body {
+  background-color: var.$white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Spectrale Extra Bold";
+}
