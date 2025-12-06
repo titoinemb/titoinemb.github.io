@@ -1,0 +1,37 @@
+@use "../var.scss";
+
+footer {
+  background-color: var.$blackFooter;
+  padding: 100px;
+  color: var.$white;
+  display: flex;
+  justify-content: space-around;
+
+  .left {
+    text-decoration: underline;
+
+    a {
+      color: var.$white;
+    }
+  }
+  
+  .right {
+    display: flex;
+
+    a {
+      margin: 5px;
+    }
+  }
+}
+
+@media(max-width: 485px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .right {
+      justify-content: center;
+    }
+  }
+}

@@ -1,5 +1,12 @@
 @use "./var.scss";
 
+@font-face {
+  font-family: 'Spectrale Extra Bold';
+  src: url('../../fonts/spectrale/Spectral-ExtraBold.ttf') format('truetype');
+  font-weight: bolder;
+  font-style: normal;
+}
+
 body {
   background-color: var.$white;
 }
@@ -9,4 +16,12 @@ body {
   padding: 0;
   text-decoration: none;
   font-family: "Spectrale Extra Bold";
+  user-select: none;  
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+img {
+  pointer-events: none;
 }

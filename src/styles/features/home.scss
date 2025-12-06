@@ -1,0 +1,34 @@
+@use "../var.scss";
+
+.home {
+  .top {
+    margin: 50px;
+
+    .title {
+      color: var.$black;
+      font-size: 30px;
+    }
+
+    .description {
+      font-size: 19px;
+      margin: 10px 15px 0 10px;
+
+      .words {
+        width: auto;
+        cursor: pointer;
+      }
+
+      .titletools {
+        font-size: 22px;
+      }
+    }
+
+    .toolsList {
+      margin: 10px 0 0 10px;
+
+      img {
+        margin: 2.5px;
+      }
+    }
+  }
+}

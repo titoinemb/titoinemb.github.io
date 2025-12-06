@@ -1,21 +1,20 @@
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
+import { Header, Home, Projects, Footer} from './components';
 import "./styles/index.scss";
-import { Header, Home } from './components';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 
 root.render(
   <Router>
+    <Header />
     <Routes>
-      <Route path='*' element={
-        <>
-          <Header />
-          <Home />
-        </>
-      } />
+      <Route path='/' element={<Home /> } />
+      <Route path='/projects' element={<Projects /> } />
     </Routes>
+
+    <Footer />
   </Router>
 );
 
