@@ -1,10 +1,20 @@
+import { useState } from "react";
+import { HomeState } from "../types";
+
 export const useHome = () => {
+  const [state, setState] = useState<HomeState>({
+    easterEggView: []
+  });
 
   const handleWords = (event: React.MouseEvent<HTMLSpanElement>) => {
-    console.log('Span cliqué:', event);
+    let content = event.currentTarget.innerText;
+
+    if (!state.easterEggView.includes(content)) setState(prevState => ({ ...prevState, easterEggView: [...prevState.easterEggView, content] }));
+    
   };
 
   return {
+    ...state,
     handleWords
   };
 };

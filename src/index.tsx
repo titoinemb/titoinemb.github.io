@@ -9,11 +9,12 @@ const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
   <Router>
     <Header />
-    <Routes>
-      <Route path='/' element={<Home /> } />
-      <Route path='/projects' element={<Projects /> } />
-    </Routes>
 
+    <Routes>
+      <Route path='*' element={<Home /> } />
+      <Route path='/projects/:id?' element={<Projects /> } />
+    </Routes>
+    
     <Footer />
   </Router>
 );
