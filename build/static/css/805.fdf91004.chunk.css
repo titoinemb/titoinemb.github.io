@@ -1,0 +1,2 @@
+header{padding:20px}header li,header ul{display:flex}header ul li{margin:10px}header ul li a{color:#0f0f0f;font-size:20px;position:relative;text-decoration:none}header ul li a:after{background:#0f0f0f;bottom:0;content:"";height:2px;left:0;position:absolute;transition:width .5s ease;width:0}header ul li a:hover:after{width:100%}
+/*# sourceMappingURL=805.fdf91004.chunk.css.map*/
