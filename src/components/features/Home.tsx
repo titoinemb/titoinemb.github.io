@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import "../../styles/features/home.scss";
 import { useHome } from "../../hooks";
 
 export const Home: React.FC = () => {
-  const { handleWords } = useHome();
+  const { handleWords, projectsJson } = useHome();
 
   return (
     <div className="home">
@@ -28,6 +29,22 @@ export const Home: React.FC = () => {
           <img src="https://camo.githubusercontent.com/c49132f37ac3f2f1b7c9a8fa2352e3f5874c6393039371b6fa4c9f405a7d8c94/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4d7953514c2d3434373941313f7374796c653d666c61742d737175617265266c6f676f3d6d7973716c266c6f676f436f6c6f723d7768697465" alt="MySQL" />
           <img src="https://camo.githubusercontent.com/a7f5c3f2f61969e4fd187fb812c757a1065393cf514db1e0d0c6c3c769bb3b00/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4578706f2d3142314632333f7374796c653d666c61742d737175617265266c6f676f3d6578706f266c6f676f436f6c6f723d7768697465" alt="Expo" />
           <img src="https://camo.githubusercontent.com/7e5aeeaedd14bc0b361b3f14d4d235da619598b2812fd494ecfb202a6cca5043/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4769742d4630353033323f7374796c653d666c61742d737175617265266c6f676f3d676974266c6f676f436f6c6f723d7768697465" alt="Git" />
+        </div>
+      </div>
+      <div className="projects">
+        <div className="list">
+          <>
+            {projectsJson.map((item: any, index: number) => {
+              return (
+                <Link to={item.link} key={index} className="item">
+                  <div className="img">
+                    <img src={item.cover} alt={item.titl} />
+                  </div>
+                  <div className="title">{item.title}</div>
+                </Link>
+              );
+            })}
+          </>
         </div>
       </div>
     </div>

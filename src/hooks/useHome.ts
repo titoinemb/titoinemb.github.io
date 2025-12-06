@@ -5,6 +5,7 @@ export const useHome = () => {
   const [state, setState] = useState<HomeState>({
     easterEggView: []
   });
+  let projectsJson = require('../data/projects.json');
 
   const handleWords = (event: React.MouseEvent<HTMLSpanElement>) => {
     let content = event.currentTarget.innerText;
@@ -15,6 +16,7 @@ export const useHome = () => {
 
   return {
     ...state,
-    handleWords
+    handleWords,
+    projectsJson
   };
 };

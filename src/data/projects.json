@@ -1,28 +1,17 @@
 [
   {
     "title": "Ignotus",
+    "cover": "https://raw.githubusercontent.com/titoinemb/titoinemb.github.io/main/.github/md/ignotus.jpg",
+    "link": "https://github.com/titoinemb/ignotus"
+  },
+  {
+    "title": "New Music Notif",
     "cover": "https://github.com/titoinemb/ignotus/raw/main/app/.github/home.png",
-    "item": {
-      "description": "",
-      "imgs": [
-        "/titoinemb/ignotus/raw/main/app/.github/home.png",
-        "/titoinemb/ignotus/raw/main/app/.github/home1.png",
-        "/titoinemb/ignotus/raw/main/app/.github/home2.png",
-        "/titoinemb/ignotus/raw/main/app/.github/home3.png",
-        "/titoinemb/ignotus/raw/main/app/.github/account.png",
-        "/titoinemb/ignotus/raw/main/app/.github/account1.png",
-        "/titoinemb/ignotus/raw/main/app/.github/account2.png",
-        "/titoinemb/ignotus/raw/main/app/.github/account3.png",
-        "/titoinemb/ignotus/raw/main/app/.github/error500.png",
-        "/titoinemb/ignotus/raw/main/app/.github/error404.png",
-        "/titoinemb/ignotus/raw/main/app/.github/movie-serie.png",
-        "/titoinemb/ignotus/raw/main/app/.github/movie-serie1.png",
-        "/titoinemb/ignotus/raw/main/app/.github/movie-serie2.png",
-        "/titoinemb/ignotus/raw/main/app/.github/search.png",
-        "/titoinemb/ignotus/raw/main/app/.github/settings.png",
-        "/titoinemb/ignotus/raw/main/app/.github/watch.png",
-        "/titoinemb/ignotus/raw/main/app/.github/watch2.png"
-      ]
-    }
+    "link": "https://github.com/titoinemb/new-music-notif"
+  },
+  {
+    "title": "LilleStops",
+    "cover": "https://raw.githubusercontent.com/titoinemb/titoinemb.github.io/main/.github/md/lillestops.png",
+    "link": "https://github.com/SmorkProject/LilleStops"
   }
 ]
