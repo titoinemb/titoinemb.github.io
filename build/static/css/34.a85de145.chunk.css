@@ -1,2 +1,0 @@
-footer{background-color:#030303;color:#f6f8de;display:flex;justify-content:space-around;padding:100px}footer .left{text-decoration:underline}footer .left a{color:#f6f8de}footer .right{display:flex}footer .right a{margin:5px}.copyright{background-color:#2754dd;color:#f6f8de;font-family:Arial,Helvetica,sans-serif;font-size:18px;padding:5px;text-align:center}@media(max-width:485px){footer{display:flex;flex-direction:column;text-align:center}footer .right{justify-content:center}.copyright{font-size:inherit}}
-/*# sourceMappingURL=34.a85de145.chunk.css.map*/

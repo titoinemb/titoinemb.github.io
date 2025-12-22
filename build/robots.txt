@@ -1,7 +1,0 @@
-# https://www.robotstxt.org/robotstxt.html
-User-agent: *
-Disallow: /static/
-Disallow: asset-manifest.json
-Disallow: logo192.png
-Disallow: logo512.png
-Disallow: manifest.json
