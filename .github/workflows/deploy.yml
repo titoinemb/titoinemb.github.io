@@ -1,38 +1,29 @@
 name: deploy
 
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
   release:
-    types: [created]
+    types: [created]  # déclenche uniquement quand une release est créée
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: '18'  # ou la version que tu utilises localement
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci  # npm ci est plus fiable pour CI/CD
 
       - name: Build
         run: npm run build
 
       - name: Deploy
-        run: |
-          git config --global user.email "mb_titoine@proton.me" # Utilisez un email fictif
-          git config --global user.name "Titoine MB"  # Utilisez un nom générique
-          npm run deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npm run deploy -- --token="${GITHUB_TOKEN}"
