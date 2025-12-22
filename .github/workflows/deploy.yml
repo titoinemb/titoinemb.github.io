@@ -5,17 +5,17 @@ on:
     types: [created]
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '25'
+          node-version: '25.2.1'
 
       - name: Install dependencies
         run: npm ci
@@ -23,12 +23,8 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Configure Git
-        run: |
-          git config --global user.email "action@github.com"
-          git config --global user.name "GitHub Action"
-
-      - name: Deploy
-        run: npx gh-pages -d build
+      - name: Deploy to GitHub Pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          npx gh-pages -d build --repo "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/titoinemb/titoinemb.github.io.git"
