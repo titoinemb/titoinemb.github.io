@@ -23,7 +23,7 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Deploy
-        run: npm run deploy
+      - name: Deploy to GitHub Pages
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npx gh-pages -d build
