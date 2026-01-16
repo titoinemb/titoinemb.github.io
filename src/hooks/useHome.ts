@@ -11,12 +11,11 @@ export const useHome = () => {
     let content = event.currentTarget.innerText;
 
     if (!state.easterEggView.includes(content)) setState(prevState => ({ ...prevState, easterEggView: [...prevState.easterEggView, content] }));
-    
   };
 
   return {
     ...state,
+    projectsJson,
     handleWords,
-    projectsJson
   };
 };

@@ -41,7 +41,7 @@ export const Home: React.FC = () => {
           <>
             {projectsJson.map((item: any, index: number) => {
               return (
-                <Link to={`project/${item.title}`} key={index} className="item">
+                <Link to={item.link} key={index} className="item">
                   <div className="img">
                     <img src={item.cover} alt={item.titl} />
                   </div>

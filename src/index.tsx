@@ -1,7 +1,7 @@
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
-import { Header, Home, Footer} from './components';
+import { Header, Home, Footer, Project } from './components';
 import "./styles/index.scss";
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
@@ -11,8 +11,8 @@ root.render(
     <Header />
 
     <Routes>
-      <Route path='*' element={<Home /> } />
-      {/*<Route path='/projects' element={<Projects /> } />*/}
+      <Route path='/' element={<Home /> } />
+      <Route path='/project/:title?' element={<Project /> } />
     </Routes>
     
     <Footer />

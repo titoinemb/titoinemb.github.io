@@ -2,11 +2,19 @@
   {
     "title": "Ignotus",
     "cover": "https://raw.githubusercontent.com/titoinemb/titoinemb.github.io/main/.github/md/ignotus.jpg",
-    "link": "https://github.com/titoinemb/ignotus"
+    "link": "https://github.com/titoinemb/ignotus",
+    "code": ""
   },
   {
     "title": "LilleStops",
     "cover": "https://raw.githubusercontent.com/titoinemb/titoinemb.github.io/main/.github/md/lillestops.png",
-    "link": "https://github.com/SmorkProject/LilleStops"
+    "link": "https://github.com/SmorkProject/LilleStops",
+    "code": ""
+  },
+  {
+    "title": "ChatyKick",
+    "cover": "https://raw.githubusercontent.com/titoinemb/titoinemb.github.io/main/.github/md/ChatyKick.jpg",
+    "link": "https://github.com/titoinemb/ChatyKick",
+    "code": ""
   }
 ]
